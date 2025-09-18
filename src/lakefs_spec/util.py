@@ -14,8 +14,7 @@ from typing import Any, Protocol
 from lakefs_sdk import __version__ as __lakefs_sdk_version__
 from lakefs_sdk.models.pagination import Pagination
 
-lakefs_sdk_version = tuple(int(v) for v in __lakefs_sdk_version__.split("."))
-del __lakefs_sdk_version__
+lakefs_sdk_version = __lakefs_sdk_version__
 
 _ParsedUri = namedtuple("_ParsedUri", ("repository", "ref", "resource"))
 

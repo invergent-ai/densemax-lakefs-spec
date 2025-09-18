@@ -3,9 +3,9 @@ requires = ["setuptools>=45", "setuptools-scm[toml]>=7.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lakefs-spec"
-description = "An fsspec implementation for lakeFS."
-keywords = ["lakeFS", "fsspec"]
+name = "densemax-lakefs-spec"
+description = "An fsspec implementation for DenseMAX lakeFS."
+keywords = ["densemax-lakeFS", "fsspec"]
 requires-python = ">=3.10"
 readme = "README.md"
 license = { text = "Apache-2.0" }
