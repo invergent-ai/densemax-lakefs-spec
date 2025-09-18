@@ -36,16 +36,15 @@ classifiers = [
 
 dependencies = [
     "fsspec>=2023.12.0",
-    "lakefs>=0.2.0",
+    "densemax-lakefs @ https://densemax.s3.eu-central-1.amazonaws.com/densemax_lakefs-1.32.2-py3-none-any.whl"
 ]
 
 dynamic = ["version"]
 
 [project.urls]
-Homepage = "https://github.com/aai-institute/lakefs-spec"
-Repository = "https://github.com/aai-institute/lakefs-spec.git"
-Issues = "https://github.com/aai-institute/lakefs-spec/issues"
-Discussions = "https://github.com/aai-institute/lakefs-spec/discussions"
+Homepage = "https://github.com/invergent-ai/densemax-lakefs-spec"
+Repository = "https://github.com/invergent-ai/densemax-lakefs-spec.git"
+Issues = "https://github.com/invergent-ai/densemax-lakefs-spec/issues"
 Documentation = "https://lakefs-spec.org/latest"
 
 [dependency-groups]
