@@ -98,7 +98,7 @@ def md5_checksum(lpath: str | os.PathLike[str], blocksize: int = 2**22) -> str:
 
 _uri_parts = {
     "protocol": r"^(?:lakefs://)?",  # leading lakefs:// protocol (optional)
-    "repository": r"(?P<repository>[a-z0-9][a-z0-9\-]{2,62})/",
+    "repository": r"(?P<repository>[a-zA-Z0-9][a-zA-Z0-9\-\.]{2,62})/",
     "ref expression": r"(?P<ref>\w[\w\-.]*(([~\^]\d*)*|@)?)/",  # ref name with optional @, ~N, ^N suffixes
     "resource": r"(?P<resource>.*)",
 }
