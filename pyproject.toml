@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "densemax-lakefs-spec"
+version = "1.50.0"
 description = "An fsspec implementation for DenseMAX lakeFS."
 keywords = ["densemax-lakeFS", "fsspec"]
 requires-python = ">=3.10"
@@ -36,10 +37,8 @@ classifiers = [
 
 dependencies = [
     "fsspec>=2023.12.0",
-    "densemax-lakefs @ https://densemax.s3.eu-central-1.amazonaws.com/densemax_lakefs-1.32.2-py3-none-any.whl"
+    "densemax-lakefs @ https://densemax.s3.eu-central-1.amazonaws.com/densemax_lakefs-1.50.0-py3-none-any.whl"
 ]
-
-dynamic = ["version"]
 
 [project.urls]
 Homepage = "https://github.com/invergent-ai/densemax-lakefs-spec"
