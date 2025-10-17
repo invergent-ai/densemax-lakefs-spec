@@ -82,7 +82,7 @@ class LakeFSFileSystem(AbstractFileSystem):
         api_key: str | None = None,
         api_key_prefix: str | None = None,
         access_token: str | None = None,
-        verify_ssl: bool = True,
+        verify_ssl: bool = False,
         ssl_ca_cert: str | None = None,
         proxy: str | None = None,
         create_branch_ok: bool = True,
@@ -106,6 +106,7 @@ class LakeFSFileSystem(AbstractFileSystem):
                 api_key_prefix=api_key_prefix,
                 access_token=access_token,
                 ssl_ca_cert=ssl_ca_cert,
+                verify_ssl=verify_ssl
             )
 
         # proxy address, not part of the constructor
